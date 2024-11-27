@@ -3,13 +3,11 @@
 // import Home from './Pages/Home';
 // import Login from './Pages/Login';
 // import Dashboard from './Dashboard';
-
 // const App = () => {
 //   return (
 //     <Routes>
 //       {/* Rutas públicas */}
 //       <Route path="/login" element={<Login />} />
-
 //       {/* Rutas privadas */}
 //       <Route element={<PrivateRoute />}>
 //         <Route path="/" element={<Home />} />
@@ -18,6 +16,4 @@
 //     </Routes>
 //   );
 // };
-
 // export default App;
-

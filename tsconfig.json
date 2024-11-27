@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "useDefineForClassFields": true,
-    "lib": ["dom", "esnext"],
-    "allowJs": true,
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
-    "moduleResolution": "node",  // Asegura que los módulos se resuelvan al estilo Node.js
-    "module": "ESNext"           // Usa módulos ESNext para una mejor compatibilidad
+    "target": "esnext", // Genera código moderno
+    "useDefineForClassFields": true, // Compatibilidad con campos privados de clases
+    "lib": ["dom", "esnext"], // Soporte para funciones modernas y el DOM
+    "allowJs": true, // Permitir archivos JavaScript
+    "jsx": "react-jsx", // Soporte para JSX (React 17+)
+    "esModuleInterop": true, // Habilitar interoperabilidad entre CommonJS y ESModules
+    "forceConsistentCasingInFileNames": true, // Consistencia en el uso de mayúsculas/minúsculas
+    "moduleResolution": "node16", // Resolución moderna de módulos (ideal para ESM)
+    "module": "Node16", // Uso de módulos modernos
+    "skipLibCheck": true, // Omitir la verificación de tipos en dependencias externas
+    "strict": true, // Reglas estrictas para mejor calidad de código
+    "resolveJsonModule": true, // Permitir importar archivos JSON
+    "isolatedModules": true, // Asegurar que cada archivo sea un módulo independiente
+    "noEmit": true // No generar archivos .js (solo para desarrollo)
   },
-  "include": ["src"]
+  "include": ["src"], // Incluir el directorio 'src'
+  "exclude": ["node_modules", "dist"] // Excluir dependencias y la carpeta de salida
 }
+
 

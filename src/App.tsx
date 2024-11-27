@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import './App.css';
 
-import Home from './Pages/Home';
-import Login from './Pages/Login';
-import Register from './Pages/Register';
-import Navbar from './component/Navbar';
+import Home from './Pages/Home.js';
+import Login from './Pages/Login.js';
+import Register from './Pages/Register.js';
+import Navbar from './component/Navbar.js';
 
 function App() {
   const [products, setProducts] = useState<any[]>([]);

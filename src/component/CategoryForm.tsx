@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { createCategory, createProduct, fetchCategories } from '../Api';
+import { createCategory, createProduct, fetchCategories } from '../Api.js';
 
 const CreateCategoryForm = () => {
   const [name, setName] = React.useState('');

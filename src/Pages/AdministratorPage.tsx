@@ -1,6 +1,6 @@
 import * as React from 'react';
-import CreateProductForm from '../component/ProductForm';
-import CreateCategoryForm from '../component/ProductForm';
+import CreateProductForm from '../component/ProductForm.js';
+import CreateCategoryForm from '../component/ProductForm.js';
 
 const ManageProductsPage = () => {
   return (

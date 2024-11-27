@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Home.css'; // Asegúrate de que los estilos estén siendo aplicados
-import Navbar from '../component/Navbar'; // Importar la barra de navegación
+import Navbar from '../component/Navbar.js'; // Importar la barra de navegación
 
 function Home() {
   const [products, setProducts] = useState<any[]>([]);
