@@ -1,0 +1,97 @@
+/* Asegúrate de que el body tenga un margen de 0 para que el navbar se vea bien */
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif; /* Fuente tipo cómic */
+  }
+  
+  /* Estilos generales de la Navbar */
+  .navbar {
+    background: linear-gradient(to right, #2C6BC2, #FF66B2); /* Gradiente azul lápiz y rosa */
+    color: white;
+    padding: 20px;
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Para asegurarnos de que quede encima de otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para hacerlo más visible */
+  }
+  
+  /* Estilos para la lista de navegación */
+  .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Estilos para los elementos de la lista */
+  .navbar-item {
+    margin: 0 20px;
+  }
+  
+  /* Estilos para los enlaces */
+  .navbar-link {
+    color: white; /* Color de los textos */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Efecto hover en los enlaces */
+  .navbar-link:hover {
+    color: gray; /* Color de las letras en hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo gris translúcido en hover */
+  }
+  
+  /* Estilo para el botón de logout */
+  .navbar-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar-button:hover {
+    color: gray; /* Cambiar color al pasar el cursor */
+  }
+  
+  /* Estilo para el contenido debajo del navbar (para evitar que se solape) */
+  .content {
+    margin-top: 100px; /* Deja espacio suficiente para el navbar fijo */
+  }
+  
+  /* Estilo para el texto centrado */
+  .navbar-title {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Esto centra el texto dentro del Navbar */
+    font-family: 'Comic Sans MS', sans-serif;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099, 0 0 40px #ff0099, 0 0 50px #ff0099; /* Efecto de luz neon */
+    animation: neonEffect 1.5s ease-in-out infinite alternate; /* Animación para el efecto de neón */
+  }
+  
+  /* Animación de neón (cambio de colores) */
+  @keyframes neonEffect {
+    0% {
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099, 0 0 40px #ff0099, 0 0 50px #ff0099;
+      color: #ff0099;
+    }
+    50% {
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffa200, 0 0 15px #ff3300, 0 0 20px #0c0c0cf7, 0 0 30px #00ff99, 0 0 40px #00ff99, 0 0 50px #00ff99;
+      color: #6f7170;
+    }
+    100% {
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099, 0 0 40px #ff0099, 0 0 50px #ff0099;
+      color: #ff0099;
+    }
+  }
+  

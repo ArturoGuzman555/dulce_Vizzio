@@ -1,7 +1,14 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "esnext"],
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "moduleResolution": "node",  // Asegura que los módulos se resuelvan al estilo Node.js
+    "module": "ESNext"           // Usa módulos ESNext para una mejor compatibilidad
+  },
+  "include": ["src"]
 }
+

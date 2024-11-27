@@ -1,0 +1,37 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .home-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .loading-message, .error-message {
+    font-size: 1.2rem;
+    color: #d9534f;
+  }
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-item {
+    background-color: #f8f9fa;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .product-item:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+  }
+  
